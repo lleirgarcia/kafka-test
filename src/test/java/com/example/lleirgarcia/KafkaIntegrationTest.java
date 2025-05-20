@@ -62,7 +62,7 @@ public class KafkaIntegrationTest {
 
     @Test
     public void testProducerAndConsumerWithRealKafka() {
-        String testMessage = "💬 Hola desde Kafka real (Testcontainers)!";
+        String testMessage = "💬 Hello, message to test integrations!";
         producer.sendMessage(testMessage);
 
         Awaitility.await()
@@ -80,7 +80,7 @@ public class KafkaIntegrationTest {
 
     @Test
     public void testKafkaToRedisIntegration() {
-        String message = "🧪 Mensaje para Kafka y Redis";
+        String message = "🧪 Message to kafka and redis";
         producer.sendMessage(message);
 
         Awaitility.await()

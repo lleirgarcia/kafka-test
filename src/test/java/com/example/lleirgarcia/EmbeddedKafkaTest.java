@@ -32,7 +32,7 @@ public class EmbeddedKafkaTest {
 
     @Test
     public void testMessageFlow() {
-        String testMessage = "Hola desde EmbeddedKafka!";
+        String testMessage = "Hello this is a Kafka message!";
         producer.sendMessage(testMessage);
 
         Awaitility.await()
